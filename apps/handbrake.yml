@@ -53,6 +53,7 @@
           - '{{path.stdout}}/{{pgrole}}/complete/:/output:rw'
           - '/dev/dri:/dev/dri:rw'
           - '/etc/localtime:/etc/localtime:ro'
+          - '/mnt:/mnt'
 
     - name: 'Setting PG ENV'
       set_fact:
